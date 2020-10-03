@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login form</title>
+</head>
+<style>
+    body {
+
+        padding: 200px;
+        padding-left: 550px;
+        padding-right: 550px;
+        background-image: url('sback8.webp');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: #e7e7e7;
+
+    }
+
+    .login {
+
+        width: 400px;
+        position: absolute;
+        justify-content: center;
+        top: 50%;
+        left: 20%;
+        background-color: black;
+        opacity: 0.8;
+        margin: -184px 0px 0px -155px;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(255, 255, 255, 0.07)
+    }
+
+    h1 {
+        color: white;
+    }
+
+    input {
+        width: 300px;
+        height: 40px;
+    }
+
+    input[type="submit"] {
+        background: #3399ff;
+        border: 0;
+        width: 310px;
+        height: 40px;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+        transition: background 0.4s linear;
+    }
+
+    h1 {
+        padding-left: 30px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: lightskyblue;
+        color: blue;
+    }
+
+    p {
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="login">
+        <form action="#">
+            <h1>Login Here</h1>
+            <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+            <input type="submit" name="submit" id="submit">
+            <p>forget password ? </p>
+            <p>new registration</p>
+        </form>
+    </div>
+</body>
+
+</html>

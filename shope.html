@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    .heas {
+        background-color: red;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    section {
+        margin: 20px;
+    }
+
+    .home-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .home-cards input {
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: red;
+        padding: 10px;
+        margin-top: 10px;
+        position: relative;
+        left: 30%;
+        text-align: center;
+    }
+
+    .home-cards div {
+        justify-content: center;
+        height: 500px;
+        border-radius: 6px solid black;
+    }
+
+    .home-cards img {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+
+    .home-cards h3 {
+        margin-bottom: 5px;
+    }
+
+    div p {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .home-cards a {
+        display: inline-block;
+        padding-top: 10px;
+        color: #0067b8;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .footer {
+        max-width: 75%;
+        margin: auto;
+    }
+
+    footer p {
+        margin-bottom: 15px;
+        color: #999;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #999;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .footer-cols li {
+        padding: 5px;
+        list-style-type: none;
+    }
+
+    .footer-cols {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 24px;
+    }
+
+    .total {
+        display: flex;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .total h1 {
+        margin-left: 30px;
+    }
+
+    .total #AMOUNT {
+        margin-left: 80px;
+        background-color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .total .pay {
+        background-color: red;
+        border-radius: 8px;
+        padding: 10px;
+        border: 0;
+        margin-left: 80px;
+        color: white;
+
+    }
+
+    @media(max-width: 700px) {
+        .home-cards {
+            grid-template-columns: auto auto;
+        }
+    }
+</style>
+
+<body>
+    <div class="heas">
+        <h1>shop now</h1>
+    </div>
+    <section class="home-cards">
+        <div>
+            <img src="ball.jpg" alt="card1">
+            <h3>New Surface Pro 7</h3>
+            <p>
+                See how Katie Sowers, Asst. Coach for the 49ers,
+                uses Surface Pro 7 to put her plans into
+                pla Lorem ipsum
+            </p>
+            <input type="button" value=" BUY NOW" class="but">
+        </div>
+        <div>
+            <img src="football.jpg" alt="card1">
+            <h3>New Surface Laptop 3</h3>
+            <p>
+                Express yourself powerfully with a
+                thin, light, and elegant design, faster performance,
+                and up to 11.5
+            </p>
+            <input type="button" value=" BUY NOW" class="but">
+        </div>
+        <div>
+            <img src="jers.jpg" alt="card1">
+            <h3>Save $150 + free controller</h3>
+            <p>
+                Buy an Xbox One X console
+                and double your fun with a free select extra controller.
+                Starting at $349.
+            </p>
+            <input type="button" value=" BUY NOW" class="but">
+        </div>
+        <div>
+            <img src="jersey3.jpg" alt="card1">
+            <h3>The new Microsoft Edge</h3>
+            <p>
+                Expect more.
+                World class performance,
+                with more privacy, more productivity,
+                and more value.
+            </p>
+            <input type="button" value=" BUY NOW" class="but">
+        </div>
+
+
+        <div>
+            <img src="shop111.jpg" alt="card1">
+            <h3>New Surface Pro 7</h3>
+            <p>
+                See how Katie Sowers, Asst. Coach for the 49ers,
+                uses Surface Pro 7 to put her plans into
+                pla Lorem ipsum dolor sit.
+            </p>
+            <input type="button" value=" BUY NOW" class="but">
+        </div>
+        <div>
+            <img src="shop222jpg.jpg" alt="card1">
+            <h3>New Surface Laptop 3</h3>
+            <p>
+                Express yourself powerfully with a
+                thin, light, and elegant design, faster performance,
+                and up to 11.5 hours battery life.
+            </p>
+            <input type="button" value=" BUY NOW" class="but">
+        </div>
+        <div>
+            <img src="shop333.webp" alt="card1">
+            <h3>Save $150 + free controller</h3>
+            <p>
+                Buy an Xbox One X console
+                and double your fun with a free select extra controller.
+                Starting at $349.
+            </p>
+            <input type="button" value=" BUY NOW" class="but">
+        </div>
+        <div>
+            <img src="shop4.jpg" alt="card1">
+            <h3>The new Microsoft Edge</h3>
+            <p>
+                Expect more.
+                World class performance,
+                with more privacy, more productivity,
+                and more value.
+            </p>
+            <input type="button" value=" BUY NOW" class="but" id="last">
+        </div>
+
+    </section>
+
+    <div class="total">
+        <h1>TOTAL AMOUNT</h1>
+        <input type="text" id="AMOUNT">
+        <input type="button" value="PAY NOW" class="pay">
+    </div>
+    <footer class="footer">
+        <p>Questions? Call 9137104459</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Netflix Originals</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a class="main" href="#">BY</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+                <li><a class="main" href="#">AKASH</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+                <li><a class="main" href="#">VHOTKAR</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

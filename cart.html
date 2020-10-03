@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+    <header class="showcase">
+        <h1>Shop Now </h1>
+    </header>
+
+    <section class="container" id="rows">
+        <div class="items" id="a">
+            <img src="jersey2.jpg" alt="card1">
+            <h3>New Surface Pro 7</h3>
+            <p>
+                See how Katie Sowers, Asst. Coach for the 49ers,
+                uses Surface Pro 7 to put her plans into
+                pla Lorem ipsum 
+            </p>
+            <p>Rs 4230</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn" >
+        </div>
+        <div class="items" id="b">
+            <img src="football.jpg" alt="card1">
+            <h3>New Surface Laptop 3</h3>
+            <p>
+                Express yourself powerfully with a
+                thin, light, and elegant design, faster performance,
+                and up to 
+            </p>
+            <p>Rs 430</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn">
+        </div>
+        <div class="items" id="c">
+            <img src="jers.jpg" alt="card1">
+            <h3>Save $150 + free controller</h3>
+            <p>
+                Buy an Xbox One X console
+                and double your fun with a free select extra controller.
+                Starting at $349.
+            </p>
+            <p>Rs 430</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn">
+        </div>
+        
+        <!-- 2 -->
+        <div class="items" id="d">
+            <img src="jersey3.jpg" alt="card1">
+            <h3>The new Microsoft Edge</h3>
+            <p>
+                Expect more.
+                World class performance,
+                with more privacy, more productivity,
+                and more value.
+            </p>
+            <p>Rs 430</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn">
+        </div>
+        <div class="items" id="e">
+            <img src="shop111.jpg" alt="card1">
+            <h3>New Surface Pro 7</h3>
+            <p>
+                See how Katie Sowers, Asst. Coach for the 49ers,
+                uses Surface Pro 7 to put her plans into
+                pla Lorem ipsum dolor sit.
+            </p>
+            <p>Rs 430</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn">
+        </div>
+        <div class="items" id="f">
+            <img src="shop222jpg.jpg" alt="card1">
+            <h3>New Surface Laptop 3</h3>
+            <p>
+                Express yourself powerfully with a
+                thin, light, and elegant design, faster performance,
+                and up to 11.5 hours battery life.
+            </p>
+            <p>Rs 430</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn">
+        </div>
+
+        <!-- 3 -->
+        <div class="items" id="g">
+            <img src="shop333.webp" alt="card1">
+            <h3>Save $150 + free controller</h3>
+            <p>
+                Buy an Xbox One X console
+                and double your fun with a free select extra controller.
+                Starting at $349.
+            </p>
+            <p>Rs 430</p>
+            <input type="button" value=" BUY NOW" class="btn">
+        </div>
+        <div class="items" id="h">
+            <img src="shop4.jpg" alt="card1">
+            <h3>The new Microsoft Edge</h3>
+            <p>
+                Expect more.
+                World class performance,
+                with more privacy, more productivity,
+                and more value.
+            </p>
+            <p>Rs 430</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn" id="last">
+        </div>
+
+        <div class="items" id="i">
+            <img src="studs2.jpg" alt="card1">
+            <h3>The new Microsoft Edge</h3>
+            <p>
+                Expect more.
+                World class performance,
+                with more privacy, more productivity,
+                and more value.
+            </p>
+            <p>Rs 430</p>
+            <input type="number" value="0" id="quantity" style="display: none;">
+            <input type="button" value=" BUY NOW" class="btn">
+        </div>
+    </section>
+
+    <h1>Cart</h1>
+
+    <div>
+        <table class="table">
+            <tr>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantiy</th>
+                <th></th>
+            </tr>
+            <tbody id="cart">
+                
+            </tbody>
+        </table> 
+        
+</div>
+
+    <div class=" store container">
+        <h3>Total</h3>
+        <h2 id="demo">0</h2>
+    </div>
+    
+    <input class="purch container" type="button" value="Purchase">
+</body>
+</html>
+<script src="cart.js"></script>
