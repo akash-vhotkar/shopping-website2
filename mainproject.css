@@ -16,6 +16,7 @@ a{
     position:relative;
 }
 
+
 .showcase h1{
     text-align: center;
     padding-top:5px;
@@ -61,6 +62,14 @@ span{
     text-align: center;
     color:lightcoral;
 }
+.buynow p{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 80px;
+}
 
 
 /* Icons */
@@ -96,17 +105,28 @@ span{
 
 /* tab 1 content */
 .tab-content-1{
+   
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap:5px;
+    grid-gap:40px;
     /* margin:10px 0px; */
     align-content: center;
+    justify-content: center;
+    color: white;
     justify-content: center;
 }
 
 .tab-content-1 img{
-    max-width:250px;
+    max-width:  400px;
     height:175px;
+}
+.tab-content-1 P{
+    text-align: center;
+   margin: auto;
+   padding: 20px;
+   
+
+    
 }
 
 
@@ -118,6 +138,7 @@ span{
 .buynow{
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 30px;
 }
 
 .tab-content-2 img{
@@ -126,16 +147,12 @@ span{
     height:175px;
 }
 
-.buynow p{
-    text-align: center;
-    font-size: 25px;
-}
 
 .galary{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap:5px;
-    margin:10px 0px ;
+    grid-gap:10px;
+    margin:2px 0px ;
 }
 
 
@@ -194,21 +211,55 @@ span{
 
 
 /* responsive */
+@media screen and (max-width:1000px){
+    .showcase{
+        height:40vh;
+        
+        background-size: cover;
+        position:relative;
+        top: 0;
+    }
+    .showcase h1{
+        font-size: 20px;
+    }
+    /* tab content 1 */
+    .tab-content-1{
+        grid-template-columns: auto auto;
+        margin: auto;
+    }
+
+    .tab-content-1 img{
+        width: 100%;
+        height:255px;
+    }
+    .tab-content-1 p{
+        text-align: center;
+    }
+
+
+}
 
 @media screen and (max-width:700px){
     /* showcase */
+    .showcase{
+        height:30vh;
+        background-size: cover;
+        position:relative;
+        top: 0px;
+    }
+  
+    .showcase{
+        background-size: 700px;
+    }
     .showcase h1{
-        font-size: 50px;
+        font-size: 20px;
     }
 
     .showcase .btn{
-        left:80%;
+        float: inline-end;
     }
 
-    .showcase .content{
-        width:50%;
-        text-align: center;
-    }
+   
     
     .showcase .content h2{
         font-size: 30px;
@@ -226,17 +277,22 @@ span{
     /* tab content 1 */
     .tab-content-1{
         grid-template-columns: auto;
-        margin-left:50px;
+        margin:auto;
     }
 
     .tab-content-1 img{
-        max-width:70%;
-        height:155px;
+        width: 100%;
+        height:255px;
     }
     /* tab content 2 */
-    .tab-content-2 .galary{
+    #tab-2-content .galary img{
+        width: 200%;
+        height:255px;
+        margin: auto;
+    }
+    #tab-2-content .galary{
         grid-template-columns: auto;
-        margin-left:60px;
+        
     }
 
     /* footer */
@@ -256,6 +312,7 @@ i{
 body{
     background-color: black;
 }
+
 /*#q{
     height:30px;
     width: 30px;
