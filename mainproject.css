@@ -8,6 +8,8 @@ a{
     color: white;
 }
 
+
+
 /* showcase */
 .showcase{
     height:93vh;
@@ -256,9 +258,14 @@ span{
 }
 
 @media screen and (max-width:700px){
+    .showcase .btn{
+        position: absolute;
+        top:5%;
+        left:80%;
+    }
     /* showcase */
     .showcase .content{
-        padding-top: 400px;
+        padding-top: 600px;
     }
     .showcase{
         height:60vh;
@@ -275,8 +282,8 @@ span{
     }
     .showcase .content{
         justify-content: center;
-        margin-top: 0px;
-        padding-top: 0px;
+        
+        padding-top: 120px;
     }
     .showcase{
         background-size: 700px;
@@ -321,7 +328,8 @@ span{
     }
 
     .tab-content-2 .galary  div img{
-        width: 100%;
+        width: 500px;
+        margin-left: 120px;
         height:300px;
     }
 
